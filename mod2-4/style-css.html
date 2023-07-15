@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset='utf-8'>
+    <title>Модуль 2 Урок 4</title>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+</head>
+<body>
+    <h1>Code Style CSS</h1>
+    <p>Хороший код — это код который удобно читать и поддерживать.</p>
+
+<p>
+    <ul>
+        Хороший код должен быть простым:
+        <li class="list">используйте легко читаемые селекторы и говорящие классы. По ним сразу можно понять к чему применяются стили.</li>
+
+        <li class="list">классы пишите в нижнем регистре (строчными буквами).</li>
+
+        <li class="list">вместо пробела в классах используйте знак «дефис». Старайтесь не использовать нижнее подчеркивание и camelCase.</li>
+
+        <li class="list">код должен быть в одном стиле: везде используется один порядок свойств, одинаковые отступы и пробелы, один стиль записи цветов и псевдоэлементов.</li>
+    </ul>
+</p>
+<div class="example">
+    <figure>
+        <figcaption>
+            <i>Плохо</i>
+        </figcaption>
+        <img src="https://quper.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fd82fd213-f705-4a5d-989b-017bdbeefd08%2FUntitled.png?id=c3dcbf34-ed8d-4ad6-b6b1-aeb47d9c556f&table=block&spaceId=2a9a909b-34cd-4326-80ab-94f3af9ad01f&width=2000&userId=&cache=v2" alt="Пример плохого кода" height="178">
+    </figure>
+    <figure>
+        <figcaption>
+            <i>Хорошо</i>
+        </figcaption>
+        <img src="https://quper.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F1fa7a400-bd89-42d0-bde4-b7a77356304c%2FUntitled.png?id=d069c6a8-0d5d-4e3e-8939-3aec0a9f2c54&table=block&spaceId=2a9a909b-34cd-4326-80ab-94f3af9ad01f&width=2000&userId=&cache=v2" alt="Пример хорошего кода" height="178">
+    </figure>
+</div>
+<p>
+    <ul>
+        Оформляем блок со свойствами:
+        <li class="list">после селектора, перед открывающей блок «фигурной скобкой» ставьте «пробел».</li>
+        <li class="list">в начале строки перед свойствами ставится «два пробела». Это самый популярный вариант.</li>
+        <li class="list">после двоеточия ставьте «пробел».</li>
+        <li class="list">обязательно ставить «точку с запятой» в конце свойства.</li>
+        <li class="list">ставьте закрывающую «фигурную скобку» на новой строке.</li>
+    </ul>
+</p>
+<figcaption>
+    Между набором правил оставляйте одну пустую строку:
+</figcaption>
+<img src="https://quper.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F1cf09e8d-0329-4651-9df8-b80a3fb21770%2FUntitled.png?id=d0e5ec52-12fc-4bb3-acf1-34d3bc767e80&table=block&spaceId=2a9a909b-34cd-4326-80ab-94f3af9ad01f&width=2000&userId=&cache=v2" alt="Пример хорошего кода" height="495">
+</figure>
+
+<p>
+    Все стили пишем через селектор класса. Теги используем только для глобальных стилей, **id** в стилях не используем.
+</p>
+<p>
+    Избегайте использование <b>!important.</b>
+</p>
+<p>
+    Псевдокласс <b>nth-child</b> используем только со значениями <b>even</b> и <b>odd.</b> В остальных случая используем дополнительный класс.
+</p>
+<p>
+    Сохраняйте уровень вложенности не более двух элементов, если не используем БЭМ.<br>
+    Плохо: <b>.block .faq .title</b><br>
+    Хорошо: <b>.faq .title</b><br>
+</p>
+<p>
+    При использовании БЭМ вложенность не используется.
+</p>
+<p>
+    Обязательно указывайте альтернативный вид и тип семейства шрифтов.
+</p>
+<p>
+    Проверяйте вёрстку на переполнение.
+</p>
+<p>
+    У интерактивных элементов обязательны стили состояний: <b>hover, focus, active, disabled</b>. 
+</p>
+<p>
+    Если используете свойство <b>display: inline-block</b>, обязательно добавляйте свойство <b>vertical-align</b>.
+</p>
+<p>
+    Свойство <b>position</b> используем в крайнем случае. Исключение: если иначе сделать невозможно или сложно.
+</p>
+<p>
+    У нулевых значений не нужно писать единицы измерения. Когда значение <b>0</b>, то не важно это px, % или попугайчики.
+</p>
+<p>
+    Значения цвета <b>hex</b> пишем в нижнем регистре.
+</p>
+<p>
+    Проверяйте css в <a href="https://jigsaw.w3.org/css-validator/">валидаторе</a>
+</p>   
+</body>
+</html>
